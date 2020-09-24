@@ -1,6 +1,13 @@
 import React from "react"
 import { ContentWrapper } from "../elements"
+import { BlogTitleContainer } from "./BlogHeading"
+import { PostsContainer } from "./BlogPostsContainer"
 
 export const Content = ({ children }) => {
-  return <ContentWrapper>{children}</ContentWrapper>
+  return (
+    <ContentWrapper>
+      <BlogTitleContainer />
+      <PostsContainer>{children}</PostsContainer>
+    </ContentWrapper>
+  )
 }

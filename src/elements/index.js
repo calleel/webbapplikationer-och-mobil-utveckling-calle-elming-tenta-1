@@ -9,4 +9,6 @@ export * from "./ButtonElements"
 export * from "./PaginationElements"
 export * from "./PostElements"
 export * from "./TableElements"
-export * from "./NavButtonElements"
+export * from "./BlogPostsContainerElements"
+
+

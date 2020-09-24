@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const FeatureImageWrapper = styled.div`
-  grid-column: 1 / span 13;
+  grid-column: 1 / span 14;
   grid-row: 1 / 4;
   overflow: hidden;
   position: relative;

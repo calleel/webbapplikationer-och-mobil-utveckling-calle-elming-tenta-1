@@ -39,7 +39,7 @@ export const pageQuery = graphql`
         featureImage {
           publicURL
           childImageSharp {
-            fixed {
+            fixed(width: 1920){
               ...GatsbyImageSharpFixed
             }
           }
