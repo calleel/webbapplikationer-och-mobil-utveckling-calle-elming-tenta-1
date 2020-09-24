@@ -2,6 +2,7 @@ export default {
   fonts: {
     main: "Muli, sans-serif",
     code: "Roboto Mono, monospace",
+    hero: "Oswald, sans-serif",
   },
   colors: {
     main1: "rgb(225, 84, 55)",
@@ -12,6 +13,7 @@ export default {
     medium1: "rgb(161, 162, 165)",
     light1: "rgb(255, 255, 255)",
     light2: "rgb(242, 242, 242)",
+    light3: "rgb(230, 230, 230)",
     navLight: "rgba(255, 255, 255, 0.8)",
   },
   breakpoints: {
@@ -33,5 +35,6 @@ export default {
   },
   shadows: {
     shadow1: "0px 5px 20px rgba(30, 30, 31, 0.05)",
+    shadow2: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
   },
 }

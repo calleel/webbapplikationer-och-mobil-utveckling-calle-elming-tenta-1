@@ -15,6 +15,7 @@ export const HeroTextWrapper = styled.div`
       font-size: 5rem;
       padding: 1rem;
       color: ${props => props.theme.colors.light2};
+      font-family: ${props => props.theme.fonts.hero}
   }
 
   P { 

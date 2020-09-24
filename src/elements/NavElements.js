@@ -15,6 +15,15 @@ export const NavWrapper = styled.nav`
     z-index: 20;
   }
 
+  li {
+    transition: 0.3s;
+  }
+
+  li:hover {
+      filter: brightness(80%);
+      color: ${props => props.theme.colors.main1};
+    }
+
   @media ${props => props.theme.breakpoints.tablet} {
     grid-column: 1 / span 8;
     background-color: rgba(255, 255, 255, 0);
@@ -23,6 +32,7 @@ export const NavWrapper = styled.nav`
       display: none;
     }
   }
+
 `
 
 export const Ul = styled.ul`
@@ -32,6 +42,7 @@ export const Ul = styled.ul`
   color: ${props => props.theme.colors.dark2};
 
   li {
+    cursor: pointer;
     padding: 18px 10px;
   }
 
@@ -49,7 +60,13 @@ export const Ul = styled.ul`
     transition: transform 0.3s ease-in-out;
 
     li {
-      color: ${props => props.theme.colors.dark1};
+      color: ${props => props.theme.colors.light2};
+      margin: 0 auto;
+    }
+    
+    li:hover {
+      filter: brightness(80%);
+      color: ${props => props.theme.colors.light3};
     }
   }
 `
