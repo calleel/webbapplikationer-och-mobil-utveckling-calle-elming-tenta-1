@@ -4,19 +4,24 @@ export const NavWrapper = styled.nav`
   grid-column: 1 / span 14;
   grid-row: 1 / 2;
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid #f1f1f1;
-  z-index: 10;
+  background-color: ${props => props.theme.colors.navLight};
+  z-index: 100;
+  padding: 0 2rem;
 
   img {
-    height: 30px;
-    /* padding: 15px 0; */
+    height: 100px;
     z-index: 20;
   }
 
   @media ${props => props.theme.breakpoints.tablet} {
-    grid-column: 2 / span 6;
+    grid-column: 1 / span 8;
+    background-color: rgba(255, 255, 255, 0);
+
+    img {
+      display: none;
+    }
   }
 `
 
@@ -24,6 +29,7 @@ export const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  color: ${props => props.theme.colors.dark2};
 
   li {
     padding: 18px 10px;
@@ -32,18 +38,18 @@ export const Ul = styled.ul`
   @media ${props => props.theme.breakpoints.tablet} {
     grid-column: 1 / span 8;
     flex-flow: column nowrap;
-    background-color: #0d2538;
-    position: fixed; 
+    background-color: ${props => props.theme.colors.main1};
+    position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
-    right: 0; 
+    right: 0;
     height: 100vh;
     width: 300px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
 
     li {
-      color: #fff;
+      color: ${props => props.theme.colors.dark1};
     }
   }
 `
@@ -54,9 +60,10 @@ export const StyledBurger = styled.div`
   height: 2rem;
   position: fixed;
   top: 15px;
-  right: 20px; 
+  right: 20px;
   z-index: 30;
   display: none;
+  cursor: pointer;
 
   @media ${props => props.theme.breakpoints.tablet} {
     display: flex;
@@ -68,10 +75,11 @@ export const StyledBurger = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => (open ? "#ccc" : "#333")};
+    background-color: ${({ open }) => (open ? "#333" : "#fff")};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
+    
 
     &:nth-child(1) {
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};

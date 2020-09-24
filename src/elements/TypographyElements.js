@@ -59,7 +59,7 @@ export const P = styled.p`
 
 export const H1 = styled.h1`
   font-size: 2.25rem;
-  line-height: 2.5rem;
+  line-height: 4rem;
   color: ${props => {
     switch (props.color) {
       case "dark1":

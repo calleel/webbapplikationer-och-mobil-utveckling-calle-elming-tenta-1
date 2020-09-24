@@ -10,5 +10,6 @@ export * from "./PaginationElements"
 export * from "./PostElements"
 export * from "./TableElements"
 export * from "./BlogPostsContainerElements"
+export * from "./HeroTextElements"
 
 

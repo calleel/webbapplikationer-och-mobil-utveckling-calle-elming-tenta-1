@@ -4,7 +4,7 @@ export const ContainerWrapper = styled.div`
   height: 100%;
   display: grid;
   grid-template-columns: 1fr repeat(10, minmax(auto, 4.2rem)) 1fr;
-  grid-template-rows: 5rem 92vh auto;
+  grid-template-rows: 5rem 92vh 40rem auto;
   gap: 0 2rem;
 
   @media ${props => props.theme.breakpoints.tablet} {
