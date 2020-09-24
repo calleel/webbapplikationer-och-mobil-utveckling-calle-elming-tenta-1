@@ -151,7 +151,7 @@ export const PostWrapper = styled.main`
   }
 
   @media ${props => props.theme.breakpoints.tablet} {
-    grid-column: 2 / span 6;
+    grid-column: 1 / span 8;
   }
 
   @media ${props => props.theme.breakpoints.mobile} {
