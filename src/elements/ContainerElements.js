@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+// Styles for the sites container with grid
 export const ContainerWrapper = styled.div`
   height: 100%;
   display: grid;

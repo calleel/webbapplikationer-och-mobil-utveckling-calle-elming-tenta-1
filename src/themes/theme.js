@@ -1,3 +1,4 @@
+// Main theme file
 export default {
   fonts: {
     main: "Muli, sans-serif",

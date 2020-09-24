@@ -4,6 +4,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import { H1 } from "../elements"
 import { Container, Post, FeatureImage, Seo } from "../components"
 
+// Builds the single post page from frontmatter
 const singlePost = ({ data }) => {
   const featureImage = data.mdx.frontmatter.featureImage.childImageSharp.fixed
 
@@ -39,7 +40,7 @@ export const pageQuery = graphql`
         featureImage {
           publicURL
           childImageSharp {
-            fixed(width: 1920){
+            fixed(width: 1920) {
               ...GatsbyImageSharpFixed
             }
           }

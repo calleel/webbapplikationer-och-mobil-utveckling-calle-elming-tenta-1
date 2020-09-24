@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+// Styles for the cards
 export const CardWrapper = styled.div`
   margin: 2rem 1rem 0 1rem;
   padding: 1rem;

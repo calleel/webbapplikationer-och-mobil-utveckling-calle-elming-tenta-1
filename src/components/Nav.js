@@ -3,6 +3,7 @@ import { useStaticQuery, Link, graphql } from "gatsby"
 import { NavWrapper } from "../elements"
 import { Burger } from "./Burger"
 
+// graphql query for logo in nav
 export const Nav = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -21,4 +22,3 @@ export const Nav = () => {
     </NavWrapper>
   )
 }
-

@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+// Styles for the navbar
+
 export const NavWrapper = styled.nav`
   grid-column: 1 / span 14;
   grid-row: 1 / 2;
@@ -20,9 +22,9 @@ export const NavWrapper = styled.nav`
   }
 
   li:hover {
-      filter: brightness(80%);
-      color: ${props => props.theme.colors.main1};
-    }
+    filter: brightness(80%);
+    color: ${props => props.theme.colors.main1};
+  }
 
   @media ${props => props.theme.breakpoints.tablet} {
     grid-column: 1 / span 8;
@@ -32,7 +34,6 @@ export const NavWrapper = styled.nav`
       display: none;
     }
   }
-
 `
 
 export const Ul = styled.ul`
@@ -63,7 +64,7 @@ export const Ul = styled.ul`
       color: ${props => props.theme.colors.light2};
       margin: 0 auto;
     }
-    
+
     li:hover {
       filter: brightness(80%);
       color: ${props => props.theme.colors.light3};
@@ -89,6 +90,7 @@ export const StyledBurger = styled.div`
     z-index: 40;
   }
 
+  /* Hamburger animation */
   div {
     width: 2rem;
     height: 0.25rem;
@@ -96,7 +98,6 @@ export const StyledBurger = styled.div`
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
-    
 
     &:nth-child(1) {
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};

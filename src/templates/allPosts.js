@@ -9,6 +9,7 @@ import {
   Seo,
 } from "../components"
 
+// Calculates pagination
 const allPosts = ({ pageContext, data }) => {
   const { currentPage, numPages } = pageContext
   const isFirst = currentPage === 1
@@ -46,6 +47,7 @@ const allPosts = ({ pageContext, data }) => {
 
 export default allPosts
 
+// graphql query that sorts the descending order when posts are created
 export const pageQuery = graphql`
   query AllPostsQuery($skip: Int!, $limit: Int!) {
     allMdx(

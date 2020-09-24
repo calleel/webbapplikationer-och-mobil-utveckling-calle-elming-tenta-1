@@ -2,6 +2,7 @@ import React from "react"
 import { CardWrapper, P, H2 } from "../elements"
 import { Button } from "../components"
 
+// Adds elements to the cards which takes in the data
 export const ContentCard = ({ date, title, excerpt, slug }) => {
   return (
     <CardWrapper>

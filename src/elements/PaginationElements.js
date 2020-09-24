@@ -9,6 +9,7 @@ export const PaginationWrapper = styled.div`
   align-items: center;
   justify-content: center;
 
+  /* Changes color and cursor depending on if you are on the first page  */
   a:nth-child(1) {
     color: ${props =>
       props.isFirst ? props.theme.colors.dark3 : props.theme.colors.dark1};
@@ -16,6 +17,7 @@ export const PaginationWrapper = styled.div`
     cursor: ${props => (props.isFirst ? "default" : "pointer")};
   }
 
+  /* Changes color and cursor depending on if you are on the last page  */
   a:nth-child(2) {
     color: ${props =>
       props.isLast ? props.theme.colors.dark3 : props.theme.colors.dark1};
@@ -27,7 +29,7 @@ export const PaginationWrapper = styled.div`
     grid-column: 2 / span 6;
   }
 `
-
+// Styles for Gatsby Link
 export const PaginationElement = styled(props => <Link {...props} />)`
   font-size: 0.875rem;
   line-height: 1.125rem;

@@ -7,15 +7,14 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "My MDX Blog",
-    description: "A simple blog built with Gatsby and MDX",
+    title: "Coffee & Code Blog",
+    description: "A blog built with Gatsby",
     url: "https://your-site.netlify.app/",
-    image:
-      "https://frontend-magic.netlify.app/static/142900cccf67f74f52182a3914449904/37155/hero-img.png",
-    twitterUsername: "@rajahasware",
-    author: "Sohail Hasware",
+    image: "",
+    twitterUsername: "",
+    author: "Calle Elming",
   },
-
+  // Adds the plugins
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -70,7 +69,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`roboto mono`, `muli\:400,400i,700,700i`],
+        fonts: [`roboto mono`, `muli\:400,400i,700,700i`, `oswald`,],
         display: "swap",
       },
     },

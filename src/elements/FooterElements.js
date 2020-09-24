@@ -1,4 +1,5 @@
 import styled from "styled-components"
+// Styles for the footer
 
 export const FooterWrapper = styled.footer`
   grid-column: 1 / span 14;

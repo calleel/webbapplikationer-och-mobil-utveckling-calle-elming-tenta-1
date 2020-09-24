@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+// Styles for posts
 export const PostWrapper = styled.main`
   grid-column: 1 / span 14;
   grid-row: 3 / span 5;

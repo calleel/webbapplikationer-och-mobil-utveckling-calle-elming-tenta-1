@@ -7,6 +7,7 @@ import {
   P,
 } from "../elements"
 
+// graphql query that asks for images for the social links
 export const Footer = () => {
   const data = useStaticQuery(graphql`
     query {

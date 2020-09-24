@@ -6,6 +6,7 @@ import Theme from "./src/themes/theme"
 import { Table, Code } from "./src/components"
 import "./language-tabs.css"
 
+// Global styles for the site
 const GlobalStyles = createGlobalStyle`
     * {
         box-sizing: border-box;

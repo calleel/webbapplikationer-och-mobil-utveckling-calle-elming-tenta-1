@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+// All styles for the various text elements on the site
 export const P = styled.p`
   margin: ${props => (props.margin ? props.margin : 0)};
   font-size: ${props => {

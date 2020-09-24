@@ -1,6 +1,7 @@
 import React from "react"
 import { Ul } from "../elements"
 
+// Right side of topnav
 export const RightNav = ({ open }) => {
   return (
     <Ul open={open}>

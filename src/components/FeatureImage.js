@@ -3,6 +3,7 @@ import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import { FeatureImageWrapper } from "../elements"
 
+// Exports the hero image with a graphql query
 export const FeatureImage = ({ fixed }) => {
   const data = useStaticQuery(graphql`
     query {
