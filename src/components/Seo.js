@@ -2,6 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
 
+
 export const Seo = ({ description, keywords, title, image, url, author }) => {
   const site = "yoururl.netlify.app"
 
@@ -21,7 +22,7 @@ export const Seo = ({ description, keywords, title, image, url, author }) => {
           : data.site.siteMetadata.image
         const metaKeywords = keywords
           ? keywords
-          : ["gatsby blog", "gatsby MDX blog"]
+          : ["gatsby blog", "gatsby MDX blog", "code", "coffee"]
         return (
           <Helmet
             title={title}
