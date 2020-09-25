@@ -9,7 +9,7 @@ module.exports = {
   siteMetadata: {
     title: "Coffee & Code Blog",
     description: "A blog built with Gatsby",
-    url: "https://your-site.netlify.app/",
+    url: "https://calle-elming-webbapplikationer-och-mobil-utveckling.netlify.app/",
     image: "",
     twitterUsername: "",
     author: "Calle Elming",
