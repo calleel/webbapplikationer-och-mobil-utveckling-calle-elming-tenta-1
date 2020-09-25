@@ -31,7 +31,7 @@
     Your site is running at `http://localhost:8000`!
 
     When editing in the code, use style components for styling.
-    
+
     Happy coding!
 
 
@@ -49,5 +49,6 @@
   Sources:
   https://www.gatsbyjs.com/docs/
   https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-3.1
+  Sohail Hasware - TUC Yrkeshögskola
 
 
