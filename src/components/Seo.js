@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 
 export const Seo = ({ description, keywords, title, image, url, author }) => {
-  const site = "yoururl.netlify.app"
+  const site = "https://calle-elming-webbapplikationer-och-mobil-utveckling.netlify.app"
 
   return (
     <StaticQuery
